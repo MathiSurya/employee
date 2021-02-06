@@ -1,0 +1,12 @@
+<div class="jumbotron">
+  <h1 class="display-4">  <%= @staff.first_name %>
+      <%= @staff.last_name %>
+
+</h1>
+  <p class="lead">  <%= @staff.age %> |   <%= @staff.gender %> |   <%= @staff.designation %>
+</p>
+  <hr class="my-4">
+  <%= link_to 'Edit', edit_staff_path(@staff), class:"btn btn-outline-info" %>        
+<%= link_to 'Back', staffs_path, class:"btn btn-dark" %>
+</div>
+
